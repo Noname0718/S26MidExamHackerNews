@@ -19,7 +19,7 @@ interface NewsApi {
     @GET("item/{id}.json")
     suspend fun getItemDetail(
         @Path("id") id: Long
-    ): HackerNewsDto
+    ): (1)
 }
 
 @Serializable
